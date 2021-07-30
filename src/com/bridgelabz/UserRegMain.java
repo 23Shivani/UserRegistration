@@ -6,6 +6,7 @@ public class UserRegMain {
 		reg.firstNameValidate();
 		reg.lastNameValidate();
 		reg.emailValidate();
+		reg.mobileValidate();
 	}
 
 }
