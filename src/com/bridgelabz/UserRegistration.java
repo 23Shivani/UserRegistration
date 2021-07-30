@@ -4,5 +4,5 @@ public interface UserRegistration {
 
 	void firstNameValidate();
 	void lastNameValidate();
-
+	void emailValidate();
 }

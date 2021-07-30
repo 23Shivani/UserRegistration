@@ -5,7 +5,7 @@ public class UserRegMain {
 		UserRegistrationImpl reg = new UserRegistrationImpl();
 		reg.firstNameValidate();
 		reg.lastNameValidate();
-
+		reg.emailValidate();
 	}
 
 }
