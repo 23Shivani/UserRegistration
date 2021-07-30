@@ -65,4 +65,19 @@ public class UserRegistrationImpl  implements UserRegistration  {
 			System.out.println("Given mobile number. is not valid");
 		}
 	}
+	
+	@Override
+	public void passwordValidate() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter your Password");
+		String password = sc.next();
+
+		Pattern pattern = Pattern.compile("^(?=.{8,20})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$");
+		Matcher matcher = pattern.matcher(password);
+		if (matcher.matches()) {
+		} else {
+			System.out.println("Given password is not valid");
+		}
+	}
 }
